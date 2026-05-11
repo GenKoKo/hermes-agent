@@ -50,8 +50,8 @@ _CRON_THREAT_PATTERNS = [
     (r'/etc/sudoers|visudo', "sudoers_mod"),
     (r'rm\s+-rf\s+/', "destructive_root_rm"),
 ]
-
 _CRON_INVISIBLE_CHARS = {
+    '\u200b', '\u200c', '\u2060', '\ufeff',
     '\u202a', '\u202b', '\u202c', '\u202d', '\u202e',
 }
 
